@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/joshua/llhfte/build",
+  "command": "/usr/bin/c++ -DHAVE_URING -I/home/joshua/llhfte/include -I/home/joshua/llhfte/src -O3 -DNDEBUG -std=c++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wsign-conversion -Wcast-align -Wold-style-cast -Wnull-dereference -Wdouble-promotion -Wformat=2 -fno-exceptions -fno-rtti -march=native -mtune=native \"\\$$<1:\" -O3 -DNDEBUG -funroll-loops -fomit-frame-pointer -fvisibility=hidden -flto > \"\\$$<0:\" -O0 -g3 -fsanitize=address,undefined -fno-omit-frame-pointer -fno-optimize-sibling-calls -O2 -g -o CMakeFiles/llhfte.dir/src/main.cpp.o -c /home/joshua/llhfte/src/main.cpp",
+  "file": "/home/joshua/llhfte/src/main.cpp",
+  "output": "CMakeFiles/llhfte.dir/src/main.cpp.o"
+}
+]
