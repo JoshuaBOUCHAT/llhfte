@@ -29,31 +29,25 @@ add_compile_options(
     -mtune=native
 
     # Release
-    $<$<CONFIG:Release>:
-        -O3
-        -DNDEBUG
-        -funroll-loops
-        -fomit-frame-pointer
-        -fvisibility=hidden
-        -flto
-    >
+    $<$<CONFIG:Release>:-O3>
+    $<$<CONFIG:Release>:-DNDEBUG>
+    $<$<CONFIG:Release>:-funroll-loops>
+    $<$<CONFIG:Release>:-fomit-frame-pointer>
+    $<$<CONFIG:Release>:-fvisibility=hidden>
+    $<$<CONFIG:Release>:-flto>
 
     # Debug — sanitizers + full symbols, no optim
-    $<$<CONFIG:Debug>:
-        -O0
-        -g3
-        -fsanitize=address,undefined
-        -fno-omit-frame-pointer
-        -fno-optimize-sibling-calls
-    >
+    $<$<CONFIG:Debug>:-O0>
+    $<$<CONFIG:Debug>:-g3>
+    $<$<CONFIG:Debug>:-fsanitize=address,undefined>
+    $<$<CONFIG:Debug>:-fno-omit-frame-pointer>
+    $<$<CONFIG:Debug>:-fno-optimize-sibling-calls>
 
     # RelWithDebInfo — profiling-friendly
-    $<$<CONFIG:RelWithDebInfo>:
-        -O2
-        -g
-        -DNDEBUG
-        -fno-omit-frame-pointer
-    >
+    $<$<CONFIG:RelWithDebInfo>:-O2>
+    $<$<CONFIG:RelWithDebInfo>:-g>
+    $<$<CONFIG:RelWithDebInfo>:-DNDEBUG>
+    $<$<CONFIG:RelWithDebInfo>:-fno-omit-frame-pointer>
 )
 
 add_link_options(

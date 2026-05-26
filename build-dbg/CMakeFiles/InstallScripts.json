@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/joshua/llhfte/build-dbg/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
