@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG -flto -Wl,--dependency-file=CMakeFiles/llhfte.dir/link.d CMakeFiles/llhfte.dir/src/main.cpp.o -o llhfte  /usr/lib/liburing.so
